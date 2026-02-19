@@ -20,4 +20,14 @@ enum class Protocol : uint32_t {
     Iso15765 = 6,
 };
 
+enum Status : long {
+    STATUS_NOERROR = 0x00,
+    ERR_NOT_SUPPORTED = 0x01,
+    ERR_INVALID_CHANNEL_ID = 0x02,
+    ERR_INVALID_DEVICE_ID = 0x03,
+    ERR_TIMEOUT = 0x09,
+    ERR_DEVICE_NOT_CONNECTED = 0x0C,
+    ERR_FAILED = 0x07,
+};
+
 }  // namespace core::j2534
